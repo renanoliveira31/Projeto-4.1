@@ -1,0 +1,76 @@
+@use 'variaveis';
+
+.hero {
+    background-size:cover;
+    background-image: linear-gradient(to right, black 40%, transparent 58%), url(/src/images/background1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    min-width: 320px;
+    max-width: 1920px;
+    height: 42em;
+
+    &__content{
+        width: 50%;
+        padding:3%;
+        display: block;
+        line-height: 1.3em;
+        }
+
+
+    &__logins__login {
+        margin: 1em;
+        display: block;
+    }
+    .button {
+        background-color: #0F79AF;
+        color: white;
+        padding: 14px 20px;
+        font-weight: bold;
+        font-size: 17px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 35%;
+    }
+}
+
+.title--small {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 32px;
+
+}
+
+.text--small{
+    color:white;
+    font-size: 21px;
+    margin-bottom: 40px;
+}
+
+.text--extra--small{
+    font-size: 14.4px;
+    color: white;
+    margin-top: 36px;
+}
+
+.hero__content__logins_div{
+    color: white;
+    display: inline-flex;
+    width: 35%;
+
+    p{
+        margin: 1em 0.5em;
+    }
+
+    &__span{
+    margin:  auto;
+    width: 100%;
+    border-top: 1px solid white;
+    }
+}
+
