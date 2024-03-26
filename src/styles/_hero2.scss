@@ -1,0 +1,116 @@
+.hero2 {
+    margin-top: 20px;
+    background-size:cover;
+    background-image: linear-gradient(to left, black 40%, transparent 58%), url(/src/images/background2.jpg);
+    background-repeat: no-repeat;
+    background-color: black;
+    min-width: 320px;
+    max-width: 1920px;
+    height: 35em;
+    max-height: fit-content;
+
+    &__content__logins {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        list-style: none;
+        color: white;
+        width: 100%;
+
+        
+
+        &__login{
+            grid-column: 2;
+            line-height: 2em;
+            padding-right: 2em;
+
+            h2{
+                font-size: 40px;
+                margin-top: 1em;
+                margin-bottom: 0.5em;
+            }
+
+            p {
+                font-size: 21px;
+                margin-bottom: 1em;
+            }
+
+            button {
+                background-color: #0F79AF;
+                border: none;
+                border-radius: 4px;
+                font-weight: bold;
+                color: white;
+                padding: 14px 20px;
+                width: 300px;
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+
+@media (min-width:320px) and (max-width:899px){
+
+    .hero2{
+        height: 45em;
+        background-image: linear-gradient(to top, black 40%, transparent 58%), url(/src/images/background2.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+
+        &__content__logins {
+            padding-top: 25em;
+            display: block;
+            text-align: center;
+        }
+    }
+    
+}
+
+@media (max-width:768px){
+
+    .hero2{
+
+        &__content__logins {
+            margin: 0 auto;
+            display: block;
+        &__login{
+            display: block;
+
+            h2{
+                font-size: 40px;
+                margin-top: 1em;
+                margin-bottom: 0.5em;
+                margin-left: 0.5em;
+                line-height: 1em;
+            }
+
+            p {
+                font-size: 21px;
+                margin-bottom: 1em;
+                text-align: center;
+                margin-left: 1.5em;
+            }
+
+            button {
+                margin-left: 1.8em;
+            }
+
+        }
+    }
+}
+}
+
+@media (max-width:320px) {
+    .hero2{
+        height: 50em;
+        &__content__logins {
+        &__login{
+            button {
+                margin-left: 0.6em;
+            }
+
+        }
+    }
+}
+}

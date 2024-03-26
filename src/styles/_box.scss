@@ -1,0 +1,54 @@
+@use 'variaveis';
+
+.box{
+
+    &__content{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        list-style: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 1.5em;
+        padding: 5em;
+
+        @media (max-width:768px){
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media (max-width:425px){
+            grid-template-columns: 1fr;
+            img {
+                max-width: 250px;
+                margin-top: 1em;
+            }
+        }
+
+        @media (max-width:375px){
+            display: block;
+            img {
+                max-width: 200px;
+                margin-top: 1em;
+            }
+        }
+
+        @media (max-width:375px){
+            display: block;
+            img {
+                max-width: 150px;
+                margin-top: 1em;
+            }
+        }
+
+        h2{
+            font-size: 33.6px;
+            font-weight: bold;
+        }
+
+        p{
+            font-size: 1.3rem;
+            line-height: 1.6rem;
+        }
+    }
+
+    }

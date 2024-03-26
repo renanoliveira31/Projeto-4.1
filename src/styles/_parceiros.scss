@@ -1,0 +1,136 @@
+@use 'variaveis';
+
+
+.parceiros {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    &__content {
+        display: block;
+        width: 100%;
+
+        h2 {
+            margin: 1.5em;
+            font-size: 40px;
+            text-align: start;
+        }
+
+        p {
+            text-align: justify;
+            margin: 4em;
+        }
+    }
+
+    &__list {
+        margin-top:25px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 8px;
+        margin-right: 36px;
+
+        &__item {
+            list-style: none;
+            img {
+                width: 100%;
+                max-width: 100%;
+                display: block;
+                cursor: pointer;
+            }
+
+            img:hover {
+            box-shadow: 0 0 14px rgba(0, 0, 0, 1); 
+            }
+        } 
+    }
+}
+
+@media (max-width: 768px) {
+    .parceiros {
+        &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+            &__item {
+                list-style: none;
+                img {
+                    max-width: 100%;
+                    display: grid;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 602px) {
+    .parceiros {
+        &__list {
+            display: none;
+            &__item {
+                list-style: none;
+                img {
+                    display: none;
+                }
+            } 
+        }
+        h2 {
+            text-align: justify;
+        }
+    }
+}
+
+
+@media (max-width: 426px) {
+   
+   .parceiros{
+    h2 {
+        text-align:justify;
+        font-size: 30px;
+        padding: 0.6em;
+        margin: 0 auto;
+     }
+
+     p{
+       margin: 0 auto;
+       padding: 1.2em;
+     }
+   }
+    
+}
+
+@media (max-width: 375px) {
+   
+    .parceiros{
+     h2 {
+         text-align:justify;
+         font-size: 30px;
+         padding: 0.6em;
+         margin: 0 auto;
+      }
+
+      p{
+        margin: 0 auto;
+        padding: 1.2em;
+      }
+    }
+     
+ }
+
+
+ @media (max-width: 320px) {
+   
+    .parceiros{
+     h2 {
+         text-align:justify;
+         font-size: 30px;
+         padding: 0.6em;
+         margin: 0 auto;
+      }
+      p{
+        margin: 0 auto;
+        padding: 1.2em;
+      }
+    }
+     
+ }
