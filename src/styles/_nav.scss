@@ -1,0 +1,132 @@
+@use 'variaveis';
+@import url("bootstrap/scss/bootstrap");
+
+
+
+header {
+    background-color: #0F1111;
+    width: 100%;
+    max-width: 1920px;
+    font-family: "amazon ember";
+    font-weight: bold;
+    text-align: center;
+    @media (min-width:1024px) and (max-width:1240.9px) {
+        padding: 0 4em;
+    }
+
+    @media (min-width:1241px) and (max-width:1340.9px) {
+        padding: 0 10em;
+    }
+
+    @media (min-width:1341px) and (max-width:1440px) {
+        padding: 0 17em;
+    }
+
+    .logo{
+        max-width: 104px;
+    }
+
+    img {
+        height: auto;
+        width: auto;
+    }
+    
+    .img2 {
+        height: auto;
+        width: 35%;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        background-color: #0F1111; 
+        padding: 1rem;
+      
+        &-nav {
+          display: flex;
+          align-items: center;
+      
+            ul li{
+               color: #aaa;
+               background-color: none;
+                
+
+            } 
+            a{
+                color: #aaa;
+            }
+
+          &-item {
+            margin-right: 10px;
+            color: white;
+          }
+        }
+      
+        .nav-item.dropdown {
+          position: relative;
+      
+          .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            display: none;
+            min-width: 10rem;
+            padding: 0.5rem 0;
+            margin: 0;
+            list-style: none;
+            background-color: #0F1111;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+
+      
+            li {
+              display: block;
+              width: 100%;
+              padding: 0.25rem 1rem;
+              clear: both;
+              font-weight: 400;
+              color: #212529;
+              text-align: inherit;
+              white-space: nowrap;
+              background-color: transparent;
+              border: 0;
+              cursor: pointer;
+      
+              .dropdown-item {
+                background-color: none;
+                @media (max-width:425px) {
+                
+                }
+              }
+
+              form {
+                background-color:none;
+              }
+              input {
+                padding:0 20em;
+              }
+
+              button {
+                border: none;
+                margin-left: 1em;
+              }
+            }
+            li:hover {
+                background-color: white;
+                border-radius: 4px;
+
+                a {
+                    color: black;
+                    font-weight: bold;
+                }
+              }
+          }
+      
+          &:hover .dropdown-menu {
+            display: block;
+          }
+        }
+      }
+      
+
+}

@@ -9,10 +9,14 @@
     max-width: 1920px;
     max-height: 65em;
 
+
     &__content{
         width: 50%;
         padding:3%;
         display: block;
+        &__logins{
+            list-style: none;
+        }
 
         .title--small {
             color: white;
@@ -42,7 +46,7 @@
             width: 100%;
             align-content: center;
             max-width: 300px;
-        
+            list-style: none;
             p{
                 margin: 1em 0.5em;
                 
@@ -55,11 +59,11 @@
             }
         }
         }
-
-
-    &__logins__login {
+   
+        &__logins__login {
         margin: 1em;
         display: block;
+
     }
     .button {
         background-color: #0F79AF;
