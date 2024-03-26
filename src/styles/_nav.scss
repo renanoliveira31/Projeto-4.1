@@ -49,10 +49,10 @@ header {
       
             ul li{
                color: #aaa;
-               background-color: none;
                 
 
             } 
+
             a{
                 color: #aaa;
             }
@@ -88,20 +88,11 @@ header {
               color: #212529;
               text-align: inherit;
               white-space: nowrap;
-              background-color: transparent;
+
               border: 0;
               cursor: pointer;
-      
-              .dropdown-item {
-                background-color: none;
-                @media (max-width:425px) {
-                
-                }
-              }
 
-              form {
-                background-color:none;
-              }
+
               input {
                 padding:0 20em;
               }
@@ -112,15 +103,20 @@ header {
               }
             }
             li:hover {
-                background-color: white;
                 border-radius: 4px;
+                background-color: white;
 
                 a {
                     color: black;
                     font-weight: bold;
                 }
               }
+
+             .form:hover {
+                border-radius: 4px;
+                background-color: #0F1111 !important;
           }
+        }
       
           &:hover .dropdown-menu {
             display: block;
