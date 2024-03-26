@@ -12,6 +12,11 @@
         margin-top: 1.5em;
         padding: 5em;
 
+        @media (max-width:1024px){
+            img {
+                max-width: 280px;
+            }
+        }
         @media (max-width:1019px){
             grid-template-columns: 1fr 1fr;
         }
