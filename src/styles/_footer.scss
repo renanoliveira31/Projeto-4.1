@@ -1,0 +1,39 @@
+@use 'variaveis';
+
+
+
+.footer {
+    text-align: center;
+    display: block;
+    background-color: #222222;
+    padding: 2em 0;
+    &__content{
+        display: block;
+        &__ul {
+            list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+            &__li{
+            margin-top: 0.5em;
+            display: inline-flex;
+            text-align: center;
+            
+                a {
+                    color: #0f79af;
+                    text-decoration: none;
+                }
+                &__mid {
+                    margin-left: 1em;
+                    margin-right: 1em;
+                }
+            }
+        }
+        &__p {
+            display: block;
+            color: #949494;
+            margin-top: 0.5em;
+        }
+    }
+}
